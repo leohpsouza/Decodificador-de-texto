@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-ENfhOvT9TgtWmTwiU6Rquy6bjvUa7/TU6LlZHeQqZpmfAYlPTdbrCnn/MzIvmHj5e5iLQ7dpxM5HsyI7ZnKwhA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>Decodificador de Tenterxtober</h1>
+        </header>
+
+        <main>
+            <section>
+                <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+
+                <div class="informacao">
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </div>
+
+                <div class="botoes">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptografar</button>
+                </div>
+
+            </section>
+
+            <div class="container">
+                <section>
+                    <div class="text-area display-flex">
+                        <textarea class="mensagem" cols="50" rows="25"></textarea>
+                    </div>
+                    <div class="btn-copiar-wrapper center">
+                        <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <span>&copy; 2023 Copyrigth by Leonardo H. P. Souza</span>
+                <a href="https://github.com/leohpsouza" target="_blank"><img src="002-github.png" class="icones"></a>
+                <a href="https://www.linkedin.com/in/leonardohpsouza/" target="_blank"><img src="003-linkedin.png" class="icones"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5548991030277&text&type=phone_number&app_absent=0" target="_blank"><img src="001-whatsapp.png" class="icones"></a>
+            </div>
+        </footer>
+    </div>
+</body>
