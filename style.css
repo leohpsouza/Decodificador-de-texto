@@ -137,4 +137,17 @@ footer {
     color: #0A3871;
 }
 
+/* Estilos padrão para telas grandes */
+.text-area {
+    width: 400px;
+    height: 200px;
+}
   
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .text-area {
+      width: 90%;
+      height: 150px;
+    }
+  }
+    
