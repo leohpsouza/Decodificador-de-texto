@@ -76,15 +76,15 @@ header h1 {
 }
 
 .mensagem {
-    width: 80%;
-    height: 200px;
-    margin: 60px auto 0;
+    width: 100%;
     padding: 10px;
-    font-size: 18px;
-    resize: none;
+    font-size: 16px;
+    line-height: 24px;
     border: none;
-    outline: none;
-    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 200px;
+    background: white;
 }
   
 .btn-copiar {
@@ -137,17 +137,26 @@ footer {
     color: #0A3871;
 }
 
-/* Estilos padrão para telas grandes */
-.text-area {
-    width: 400px;
-    height: 200px;
-}
-  
-/* Estilos para telas menores */
-@media (max-width: 768px) {
+/* Layout responsivo para diferentes tamanhos de tela */
+
+/* Estilo para telas menores que 600px */
+@media screen and (max-width: 600px) {
     .text-area {
       width: 90%;
-      height: 150px;
     }
   }
-    
+  
+  /* Estilo para telas maiores que 600px e menores que 900px */
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .text-area {
+      width: 80%;
+    }
+  }
+  
+  /* Estilo para telas maiores que 900px */
+  @media screen and (min-width: 900px) {
+    .text-area {
+      width: 60%;
+    }
+  }
+  
